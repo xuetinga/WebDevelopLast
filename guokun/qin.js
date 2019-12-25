@@ -1,4 +1,4 @@
-var gkkuang=document.getElementById("gkkuang");
+ var gkkuang=document.getElementById("gkkuang");
 		var gkhaonan=document.getElementById("gkhaonan");
 		var gkhaonanfont=document.getElementById("gkhaonanfont");
 		gkkuang.onkeypress=function(e){
