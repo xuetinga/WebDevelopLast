@@ -142,7 +142,7 @@ ul .li{
 	margin-top: 15px;
 	font-size: 40px;
 	font-family: cursive;
-	color: black;
+	color: white;
 }
 .box{
 	width: 600px;
@@ -190,7 +190,7 @@ ul .li{
 	margin-top: -400px;
 	margin-left: 800px;
 	/* margin-right:140px ; */
-	color: black;/*这是评论：可以改颜色*/
+	color: white;/*这是评论：可以改颜色*/
 	font-size: 30px;
 	font-family: cursive;
 }
