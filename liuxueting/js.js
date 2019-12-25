@@ -36,6 +36,31 @@ setInterval(function(){
     i1.innerHTML = minute;
     m1.innerHTML = second;
 },1000);
+//回到顶部
+var body = document.getElementsByTagName('body')[0];
+var nav2 = document.createElement('div');
+var img = document.createElement('img');
+
+nav2.style.width = "2cm";
+nav2.style.margin = "0 auto";
+nav2.style.height = "2cm";
+nav2.style.position = "fixed";
+nav2.style.right = "0px";
+nav2.style.bottom = "50px";
+img.style.width = "1.5cm";
+img.style.height = "1.5cm";
+img.src = "images/wu1.jpg";
+nav2.appendChild(img);
+nav2.onclick = function(){
+    document.documentElement.scrollTop = '0px';
+}
+nav2.onmouseover = function(){
+	img.src = "images/wu8.jpg";
+}
+nav2.onmouseout = function(){
+	img.src = "images/wu1.jpg";
+}
+body.appendChild(nav2);
 //轮播方法
 borde.appendChild(ul);
 	function next(){
@@ -76,8 +101,9 @@ borde.appendChild(ul);
             } else{
                 n++;
                 var li = document.createElement("li");
+                li.className="pp";
                 li.innerHTML = msg.value + "  "+"<span>&nbsp;&nbsp;×</span>";
-                var lis = document.getElementsByTagName("li");
+                var lis = document.getElementsByClassName("pp");
                 if(n === 1){
                     ul.appendChild(li);
                 }else{

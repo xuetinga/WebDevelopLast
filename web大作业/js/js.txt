@@ -1,0 +1,77 @@
+var menuData = document.getElementsByClassName('menuData');
+var detailList=document.getElementsByClassName("detail");
+var secondBannerImgList = document.getElementsByClassName('secondBannerImg');
+var imgsList=["images/wu3.png","images/wu4.png","images/wu5.png","images/wu6.png","images/wu7.png","images/wu8.png"];
+var imgsListBig=["images/wu3big.jpg","images/wu4.png","images/wu5.png","images/wu6.png","images/wu7.png","images/wu8.png"];
+//这是专门放大图片的列表得自己改
+var BigImg=document.getElementById("Bigdetail5");
+var SmallImg=document.getElementById("Smalldetail4");
+var btn1=document.getElementById("btn1");
+var btn2=document.getElementById("btn2");
+var btn3=document.getElementById("btn3");
+var btn4=document.getElementById("btn4");
+
+for (var i = 0; i < menuData.length; i++) {
+	menuData[i].onclick=function(){
+				var flag=parseInt(this.getAttribute("title"));
+				this.style.color = "pink";
+				this.style.backgroundColor = "purple";
+				detailList[flag].style.display="block";
+				for(var k=0;k<4;k++){
+					if(k!=flag){
+						console.log("haaaa");
+						detailList[k].style.display="none";
+						menuData[k].style.backgroundColor = "yellow";
+						menuData[k].style.color="black";
+					}
+				}
+	}
+}
+for(var j=0;j<4;j++){
+	menuData[j].onmouseover=function(){
+		this.style.color="orange";
+	}
+}
+for(var j=0;j<4;j++){
+	menuData[j].onmouseout=function(){
+		this.style.color="black";
+	}
+}
+
+for (var i = 0; i < secondBannerImgList.length; i++) {
+	secondBannerImgList[i].onclick=function(){
+
+		console.log("index");
+		var index=parseInt(this.getAttribute("title"));
+		console.log("index"+index);
+		detailList[3].style.display="none";
+		detailList[4].style.display="block";
+		SmallImg.src=imgsList[index];
+		BigImg.src=imgsListBig[index];
+
+	}
+}
+btn1.onclick=function(){
+		detailList[3].style.display="none";
+		detailList[4].style.display="none";
+		detailList[5].style.display="block";
+}
+btn2.onclick=function(){
+		detailList[3].style.display="none";
+		detailList[4].style.display="block";
+		detailList[5].style.display="none";
+}
+
+btn3.onclick=function(){
+
+		detailList[3].style.display="block";
+		detailList[4].style.display="none";
+		detailList[5].style.display="none";
+}
+
+btn4.onclick=function(){
+
+		detailList[3].style.display="block";
+		detailList[4].style.display="none";
+		detailList[5].style.display="none";
+}

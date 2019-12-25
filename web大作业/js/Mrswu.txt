@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>吴亦凡</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div id="nav1"></div>
+	<div id="nav2"></div>
+	<div class="bigPicture">
+		<!-- <img src="images/wu1.jpg" style="width:1500px;"> -->
+	</div>
+	<div class="second">
+		<div class="secondBanner">
+			<ul class="secondMenu" id="myTab">
+				<li class="menuData"title="0">
+					他的简介
+				</li>
+				<li class="menuData" title="1">
+					他的歌曲
+				</li>
+				<li class="menuData" title="2">
+					他的电影
+				</li>
+				<li class="menuData" title="3">
+					他的照片
+				</li>
+			</ul>
+		</div>
+		<div class="secondUnderBanner">
+			<div  class="detail" id="detail0">
+				<p>第一部分</p>
+			</div>
+			<div class="detail" id="detail1">
+				<p>第二部分</p>
+			</div>
+			<div class="detail" id="detail2">
+				<p>第三部分</p>
+			</div>
+			<div class="detail" id="detail3">
+				<div class="secondBannerImg" title="0">
+					<img src="images/wu3.png">
+				</div>
+				<div class="secondBannerImg" title="1">
+					<img src="images/wu4.png" >
+				</div>
+				<div class="secondBannerImg"title="2">
+					<img src="images/wu5.png" >
+				</div>
+				<div class="secondBannerImg"title="3">
+					<img src="images/wu6.png" >
+				</div>
+				<div class="secondBannerImg"title="4">
+					<img src="images/wu7.png" >
+				</div>
+				<div class="secondBannerImg"title="5">
+					<img src="images/wu8.png">
+				</div>
+			</div>
+			<div class="detail" id="detail4" style="background-color: rgba(0,0,0,0.5);">
+				<div class="detailImg" ><img src="" id="Smalldetail4"></div>
+				<div id="btn3" class="btn">关闭</div>
+				<div id="btn1" class="btn">放大图片</div>
+			</div>
+			<div class="detail" id="detail5" >
+				<div class="detailImg" ><img src="" id="Bigdetail5"></div>
+				<div id="btn4" class="btn">关闭</div>
+				<div id="btn2" class="btn">适应页面</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+<script type="text/javascript"src="js.js"></script>
+
+</html>

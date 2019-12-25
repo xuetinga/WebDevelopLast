@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var body = document.getElementsByTagName('body')[0];
+	var nav1 = document.createElement('div');
+	var nav2 = document.createElement('div');
+	var img = document.createElement('img');
+	var list = ["0","1","2","3","4","5"];
+	var ul =document.createElement('ul');
+	ul.style.marginTop = '1px';
+	ul.style.marginLeft = '0px';
+	ul.style.display = 'inline';
+	ul.style.listStyleType = 'none';
+	ul.style.position = 'absolute';
+
+	// u1.style.margin = '0 200px 200px 200px';
+	for(var i = 0;i<6;i++){
+		var a =document.createElement('a');
+		a.style.height = '45px';
+		a.style.width = '150px';
+		a.style.lineHeight = '45px';
+		a.style.lineAlign = 'center';
+		a.style.float = 'left';
+		a.style.margin = '0px 24px';
+		// a.style.color = "#3aa747";
+		// a.style.borderBottom = ' 3px solid #3aa747';
+
+		var li = document.createElement('li');
+		a.appendChild(li);
+		li.innerHTML = list[i];
+		console.log(i);
+		li.style.backgroundColor = 'blue';
+		li.style.color = 'black';
+		ul.appendChild(a);
+	}
+	nav1.style.position = "absolute";
+	nav1.style.backgroundColor = "red";
+	nav1.style.width= "1500"+"px";
+	nav1.style.height= "50"+"px";
+	nav1.style.textAlign = "center";
+	// nav1.style.marginLeft = "200px";
+	// nav1.style.margin = '0 200px 200px 200px';
+	nav1.style.float ='left'; 
+	nav1.style.lineHeight = '50px';
+	nav1.appendChild(ul);
+
+
+	nav2.style.width = "2cm";
+	nav2.style.margin = "0 auto";
+	nav2.style.height = "2cm";
+	nav2.style.position = "fixed";
+	nav2.style.right = "0px";
+	nav2.style.bottom = "50px";
+	img.style.width = "1.5cm";
+	img.style.height = "1.5cm";
+	img.src = "image/up.png";
+	nav2.appendChild(img);
+	nav2.onclick = function(){
+       document.documentElement.scrollTop = '0px';
+	}
+
+
+
+    
+
+	body.appendChild(nav1);
+	body.appendChild(nav2);
+
+
+
+	
+</script>
+<ml>

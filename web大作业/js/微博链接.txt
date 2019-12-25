@@ -1,0 +1,116 @@
+<div class="container">
+			<div class="top"><p>微博链接</p></div>
+			<div id="lowf">//超链接url可以改
+				<div id="wburl"><a href="https://weibo.com/xiaozhan1">点击此处，打开我的微博！！！</a></div>
+				<div id="left">
+					<p>近期活动</p>
+					<div>
+						<ul>////内容可以改，超链接url可以改
+							<li><a href="#">1.#向前一步#同名主题曲</a></li>
+							<li><a href="#">2.#伯爵限时腕表珍品展#</a></li>
+							<li><a href="#">3.#国家公祭日#转发微博</a></li>
+							<li><a href="#">4.代言#麦丽素#</a></li>
+							<li><a href="#">5.#口红电影心动上映#</a></li>						
+						</ul>
+					</div>
+				</div >
+				<div id="right">
+					<p>我的标签</p>//内容可以改
+					<div class="di" id="one">青春</div>
+					<div class="di" id="two">活力</div>
+					<div class="di" id="three">艺人</div>
+					<div class="di" id="four">长腿欧巴</div>
+					<div class="di" id="five">天秤座</div>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+
+
+
+a{ text-decoration:none;
+	/*color:#3e41b7;*/
+	color:black;
+	font-style: italic;
+} 
+a:link{
+	margin-left: 301px;
+	margin-top: 31px;
+}
+a:visited{
+
+}
+a:hover{
+	color:#110b60;
+	margin-left: 305px;
+	margin-top: 33px;
+	text-decoration: underline;
+}
+a:active{
+	color:black;
+}
+
+
+li{
+	margin-top: 5px;
+	margin-left: -300px;
+	font-size:15px;
+	list-style: none;
+}
+
+#left{
+	height:200px;
+	width:200px;
+	margin-left: 300px;
+	margin-top: 30px;
+	border:1px solid pink;
+	
+}
+
+
+#right{
+	height:200px;
+	width:200px;
+	margin-top: -200px;
+	margin-left:800px;
+}
+.di{   //小方块颜色可以改
+	height:20px;
+	background-color: red;
+	filter:alpha(opacity=40);
+	width:40px;
+	margin-top: 10px;
+}
+#one{
+	
+}
+#two{
+	
+	margin-left:50px;
+	margin-top:-20px 
+}
+#three{
+	
+}
+#four{
+	width:70px;
+	margin-top: -20px;
+	margin-left: 60px;
+}
+#five{
+	width:60px;
+}
+#wburl{
+
+	margin-left:200px;
+	margin-top:30px;
+	font-size:20px; 
+}
+
+#lowf{
+	border:1px solid black;
+	height: 250px;
+}

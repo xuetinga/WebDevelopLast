@@ -1,0 +1,190 @@
+css部分：后面结束还要引入一句<script src="animate.js"></script>
+/*第三部分从这里开始*/
+		ul,li{
+			list-style: none;
+		}
+		#third{
+			height: 480px;
+			width: 1200px;
+			margin : auto;
+		}
+		#say{/*这是粉丝评价截图：可以改颜色*/
+			width: 200px;
+			margin-left: 80px;
+			margin-bottom: 15px;
+			margin-top: 15px;
+			font-size: 0.9em;
+			color: black;
+		}
+		.box{
+			width: 600px;
+			height: 383px;
+			border: 1px solid #aaa;
+			margin-left: 100px ;
+			position: relative;
+			overflow: hidden;
+		}
+		.slider{
+			width: 4200px;
+			position: absolute;
+			left: -600px;
+		}
+		.slide{
+			width: 600px;
+			overflow: hidden;
+			float: left;
+		}
+		.slide>img{
+			height: 383px;
+			width: 600px;
+		}
+		.box>span{
+			display: block;
+			width: 30px;
+			height: 50px;
+			text-align: center;
+			cursor:pointer ;
+			color: ;
+			top: 195px;
+			line-height: 50px;
+			background: #aaa;/*轮播图按钮颜色，可修改*/
+			font-size: 30px;
+			position: absolute;
+			opacity: 0;
+		}
+		#left{
+			left: 30px;
+		}
+		#right{
+			right: 30px;
+		}
+		#write{
+			width: 20px;
+			height: 200px;
+			margin-top: -400px;
+			margin-left: 750px;
+			color: black;/*这是评论：可以改颜色*/
+		}
+		textarea {
+            width:320px;
+            height:180px;
+            font-size:16px;
+            margin-top:150px;
+            margin-left: 20px;
+            background-color:#bbb;
+        }
+        span:hover {
+            cursor:pointer;
+        }
+		#word{
+			height: 400px;
+			margin-top: -200px;
+			margin-left: 800px;
+		}
+		#btn{
+			background-color: #bbb;
+		}
+		
+		/*第三部分到这里结束*/
+
+html部分：
+<!-- 第三部分 -->
+	<div id="third">
+	<p id="say">粉丝评价截图：</p>
+	<div class="box" id="box">
+		<div class="slider" id="slider"><!-- 所有图的路径均可修改-->
+			<div class="slide"><img src="../images/img-3447644f8a72fe83f594f8e464b11d29_WPS图片.jpg" alt=""></div>
+			<div class="slide"><img src="../images/gege5.jpg" alt=""></div>
+			<div class="slide"><img src="../images/-1609521151.jpg" alt=""></div>
+			<div class="slide"><img src="../images/gege0.jpg" alt=""></div>
+			<div class="slide"><img src="../images/img-3447644f8a72fe83f594f8e464b11d29_WPS图片.jpg" alt=""></div>
+			<div class="slide"><img src="../images/img-3447644f8a72fe83f594f8e464b11d29_WPS图片.jpg" alt=""></div>
+			<div class="slide"><img src="../images/img-3447644f8a72fe83f594f8e464b11d29_WPS图片.jpg" alt=""></div>			
+		</div>
+		<span id="left">< </span>
+		<span id="right">></span>
+	</div>
+	<div id="write">请输入你的留言</div>
+	<div id="word">
+    <div id = "borde">
+    </div>
+    <label>
+        <textarea id = "msg" rows = "5" cols = "42"></textarea>
+    </label>
+    <button id="btn">留言</NOtton>
+	</div>
+	</div>
+
+	<!-- 第三部分 -->
+
+js部分：
+// <!-- 第三部分 -->
+	var box=document.getElementById("box");
+	var slider=document.getElementById("slider");
+	var left=document.getElementById("left");
+	var right=document.getElementById("right");
+	var borde = document.getElementById("borde");
+    var ul = document.createElement("ul");
+    var btn = document.getElementById("btn");
+    var msg = document.getElementById("msg");
+    var n = 0;
+   	var index=1;
+	var timer;
+	 borde.appendChild(ul);
+	function next(){
+		index++;
+		animate(slider,{left:-600*index},function(){
+			if(index===6){
+				slider.style.left="-600px";
+				index=1;
+			}
+		});
+	}
+	function prev(){
+		index--;
+		animate(slider,{left:-600*index},function(){
+			if(index===0){
+				slider.style.left="-3000px";
+				index=5;
+			}
+		});
+	}
+	var timer=setInterval(next,3000);
+	slider.onmouseover=function(){
+		animate(left,{opacity:50});
+		animate(right,{opacity:50});
+		clearInterval(timer);
+	}
+	//鼠标离开事件
+	slider.onmouseout=function(){
+		animate(left,{opacity:0});
+		animate(right,{opacity:0});
+		timer=setInterval(next,3000);
+	}
+	right.onclick=next;
+	left.onclick=prev;
+        btn.onclick = function(){
+            if(msg.value === ""){
+                alert("请输入内容")
+            } else{
+                n++;
+                var li = document.createElement("li");
+                li.innerHTML = msg.value + "  "+"<span>&nbsp;&nbsp;×</span>";
+                var lis = document.getElementsByTagName("li");
+                if(n === 1){
+                    ul.appendChild(li);
+                }else{
+                    ul.insertBefore(li,lis[0]);
+                }
+                msg.value = "";
+                var span = document.getElementsByTagName("span");
+                for(var i = 0;i<span.length;i++){
+                    span[i].onclick = function(){
+                        ul.removeChild(this.parentNode);
+                        n--;
+                    }
+                }
+            }
+        };
+	//<!-- 第三部分 --> 
+</script>
