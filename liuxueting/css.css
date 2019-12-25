@@ -188,7 +188,7 @@ ul .li{
 	width: 20px;
 	height: 200px;
 	margin-top: -400px;
-	margin-left: 850px;
+	margin-left: 800px;
 	/* margin-right:140px ; */
 	color: black;/*这是评论：可以改颜色*/
 	font-size: 30px;
@@ -208,7 +208,7 @@ span:hover {
 #word{
 	height: 400px;
 	margin-top: -200px;
-	margin-left: 800px;
+	margin-left: 739px;
 }
 #btn{
 	margin-left: 100px;
