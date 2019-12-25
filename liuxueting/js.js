@@ -151,9 +151,9 @@ for(var j=0;j<4;j++){
 for (var i = 0; i < secondBannerImgList.length; i++) {
 	secondBannerImgList[i].onclick=function(){
 
-		console.log("index");
+		//console.log("index");
 		var index=parseInt(this.getAttribute("title"));
-		console.log("index"+index);
+		//console.log("index"+index);
 		detailList[3].style.display="none";
 		detailList[4].style.display="block";
 		SmallImg.src=imgsList[index];
