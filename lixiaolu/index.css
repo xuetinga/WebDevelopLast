@@ -2,39 +2,38 @@
 	font-weight: 600;
 	margin: 0 auto;
 	padding: 0px; 
-	font-family: 'Microsoft YaHei';
+	font-family: cursive;
 	/*overflow: hidden;*/
 }
 body{
-	background-color:  #cccc99;
+	background-color:#fccdfa;
 }
 
 #appellation{
 	font-size: 200px;
-	color: red;
+	color: #1f1fe5;
 	margin-top: 200px;
 	margin-left:600px; 
 	opacity: 0;
 }
 #sentence1{
 	font-size: 200px;
-	color: red;
+	color: #1f1fe5;
 	margin-top: 200px;
 	margin-left:200px; 
-
 	opacity: 0;
 }
 
 #sentence2{
 	font-size: 200px;
-	color: red;
+	color: #1f1fe5;
 	margin-top: 200px;
 	margin-left:200px; 
 	opacity: 0;
 }
 #rating{
-	font-size: 280px;
-	color: red;
+	font-size: 200px;
+	color:#1f1fe5;
 	margin-top: 200px;
 	margin-left:200px; 
 	opacity: 0;
@@ -142,7 +141,7 @@ a:link{
 	float: left;
 	overflow: hidden;
 	line-height: 30px;
-	color: #f00;
+	color: black;
 }
 
 
