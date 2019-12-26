@@ -2,23 +2,23 @@
 	font-weight: 600;
 	margin: 0 auto;
 	padding: 0px; 
-	font-family:cursive;
+	font-family: 'Microsoft YaHei';
 	/*overflow: hidden;*/
 }
 body{
-	background-color:#fccdfa;
+	background-color:  #cccc99;
 }
 
 #appellation{
 	font-size: 200px;
-	color: #1f1fe5;
+	color: red;
 	margin-top: 200px;
 	margin-left:600px; 
 	opacity: 0;
 }
 #sentence1{
 	font-size: 200px;
-	color: #1f1fe5;
+	color: red;
 	margin-top: 200px;
 	margin-left:200px; 
 
@@ -27,20 +27,20 @@ body{
 
 #sentence2{
 	font-size: 200px;
-	color: #1f1fe5;
+	color: red;
 	margin-top: 200px;
 	margin-left:200px; 
 	opacity: 0;
 }
 #rating{
 	font-size: 280px;
-	color: #1f1fe5;
+	color: red;
 	margin-top: 200px;
 	margin-left:200px; 
 	opacity: 0;
 }
 
-#left{
+#idol{
 	position: relative;
 	font-size: 100px;
 	margin-top: 500px;
@@ -59,7 +59,7 @@ body{
 	width: 1304px;
 	position: relative;
 }
-#nav a:link{
+a:link{
 	text-decoration: none;
 }
 
@@ -104,7 +104,7 @@ body{
 }
 #container0{
 	width: 1300px;
-	height: 1400px;
+	height: 1850px;
 	border:2px solid black;
 	/*background-color: #dae7bb;*/
 	background-color: #cc9999;
@@ -177,10 +177,18 @@ body{
 }
 
 
+#lables{
+	width:1300px;
+	height: 150px;
+	background-color: #000;
+	text-align: center;
+	color: #c79c57;
+	font-size: 80px;
+	line-height: 150px;
+}
+
 
 .main3{
-	/*background-color: #dddfd2;*/
-	/*background-color: #1b4f5c;*/
 	text-align: center;
 	width:970px;
 	height:1100px;
@@ -346,350 +354,54 @@ body{
 }
 
 
-
-/*
-*{
-	font-weight: 600;
-	margin: 0 auto;
-	padding: 0px; 
-	font-family: 'Microsoft YaHei';
+ul,li{
+	list-style:none;
 }
-body{
-	background-color:  #dddfd2;
-}
-
-
-
-
-#appellation{
-	font-size: 200px;
-	color: red;
-	margin-top: 200px;
-	margin-left:600px; 
-	opacity: 0;
-}
-#sentence1{
-	font-size: 200px;
-	color: red;
-	margin-top: 200px;
-	margin-left:200px; 
-
-	opacity: 0;
-}
-
-#sentence2{
-	font-size: 200px;
-	color: red;
-	margin-top: 200px;
-	margin-left:200px; 
-	opacity: 0;
-}
-#rating{
-	font-size: 280px;
-	color: red;
-	margin-top: 200px;
-	margin-left:200px; 
-	opacity: 0;
-}
-
-#left{
-	position: relative;
-	font-size: 100px;
-	margin-top: 500px;
-	right: 1200px;
+.box{
 	width: 1200px;
-	float: left;
-}
-
-#container{
-	opacity: 0;
-}
-.png{
-	opacity: 0;
-}
-#container{
-	width: 1304px;
-	position: relative;
-}
-#nav a:link{
-	text-decoration: none;
-}
-
-#nav>ul>a>li:hover{
-	color: black;
-	background-color: #c79c57;
-}
-
-#nav0{
-	position: absolute;
-	margin-left:30px;
-	line-height: 80px;
-	float: left;
-}
-
-#nav {
-	font-size: 30px;
-	color: #c79c57;
-	height:80px;
-	background-color: #311f1d;
-	margin-top: 0px;
-}
-#nav>ul{
-
-	width: 1300px;
-	left: 150px;
-	display: inline;
-	list-style-type: none;
-	color: #c79c57;
-	position: absolute;
-}
-
-#nav>ul>a>li{
-	font-size: 40px;
-	text-align: center;
-	width:220px;
-	height:80px;
-	line-height: 80px;
-	color: #c79c57;
-	float: left;
-	margin-right: 10px;
-}
-#container0{
-	width: 1300px;
-	height: 1400px;
-	border:2px solid black;
-
-	background-color: #000;
-}
-
-.tip{
-	width: 1300px; 
-	position: absolute;
-	height: 40px;
-	background-color: #ccc;
-	line-height: 40px;
-	color: red;
-	font-size: 25px;
-}
-
-.showtip{
-	width: 1000px;
-	height: 40px;
-	line-height: 40px;
+	height: 420px;
 	border-top: none;
-	border-bottom: none;
 	text-align: center;
 	border-bottom: none;
+	margin: 50px auto;
 	position: relative;
 	overflow: hidden; 
 }
-.slidertip{
-	width:1200px;
-	height: 40px;
+.slider{
+	width: 8400px;
+	height: 420px;
 	position: relative;
 	left: -1200px;
 }
-.words{ 
+
+.slide{
 	width: 1200px;
 	float: left;
-	overflow: hidden;
-	line-height: 30px;
-	color: #f00;
+	overflow:hidden;
 }
-
-
-
-#search{
-
-	width: 500px;
-	height: 40px;
-
-	margin-top:50px;
-
-	line-height: 40px;
-	margin-bottom:50px;
-
+.slider>.slide>img{
+	height: 420px;
 }
-#input{
-	width: 350px;
-	height: 45px;
-	color:#ccc;
-}
-#btn{
-	position: relative;
-	display: inline;
-	height:45px;
-	width: 68px;
-	margin-top: 15px;
-	background-image: url(image/idol.jpg);
-}
-
-
-
-.main3{
-	background-color: #dddfd2;
-
+.box>span{
+	top:170px;
 	text-align: center;
-	width:970px;
-	height:1100px;
-	margin:0 auto;
-
-}
-.main3 div{
-	float:left;
-}
-.main3 div div{
-	margin-top:280px;
-	padding-top:5px;
-	width:300px;
-	height:60px;
-	text-align:center;
-	color:#fff;
-	font-size:40px;
-	background-color:rgba(0,0,0,0.7);
-
-}
-.main3 div:hover div{
-	color:#fff;
-	height: 220px;
-	text-align: center;
-	padding-top:125px;		
-	position:relative;
-	top: -280px;
-}
-.img{
-	border-radius: 20px;
-	width:300px;
-	height:345px;
-	background-repeat:no-repeat;
-	background-size:300px 345px;
-	margin:10px; 
-}
-.img0{
+	font-size: 60px;
+	line-height: 60px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	color: #ccc;
+	background:black;
+	position: absolute;
+	opacity: 0;
 	border-radius: 20px;
 }
 
-#i{
-	background-image:url("image/i.jpg");
-}
-#d{
-	background-image:url("image/d.jpg");
-}
-#o{
-	background-image:url("image/o.jpg");
-}
-#l{
-	background-image:url("image/l.jpg");
+#left{
+	left: 30px;
 }
 
-
-#img1{
-	background-image:url("image/ting.jpg");
+#right{
+	right:30px;
 }
-#img2{
-	background-image:url("image/bo.jpg");
-}
-#img3{
-	background-image:url("image/qin.jpg");
-}
-#img4{
-	background-image:url("image/zhan.jpg");
-}
-#img5{
-	background-image:url("image/fan.jpg");
-}
-
-#png1{
-	position: absolute;
-	left: 100px;
-	top: 1100px;
-
-}
-#png0{
-	position: absolute;
-	left: 150px;
-	top: 300px;
-}
-#png2{
-	position: absolute;
-	left: 170px;
-	top: 450px;
-}
-#png3{
-	position: absolute;
-	left:300px;
-	top: 650px;
-}
-#png4{
-	position: absolute;
-	left:200px;
-	top: 750px;
-}
-#png5{
-	position: absolute;
-	left:100px;
-	top: 850px;
-}
-#png6{
-	position: absolute;
-	left:200px;
-	top: 550px;
-}
-#png7{
-	position: absolute;
-	left:20px;
-	top: 550px;
-}
-#png8{
-	position: absolute;
-	left:200px;
-	bottom: 110px;
-}
-
-#png11{
-	position: absolute;
-	right: 100px;
-	top: 1100px;
-
-}
-#png00{
-	position: absolute;
-	right: 150px;
-	top: 300px;
-}
-#png22{
-	position: absolute;
-	right: 170px;
-	top: 450px;
-}
-#png33{
-	position: absolute;
-	right:300px;
-	top: 650px;
-}
-#png44{
-	position: absolute;
-	right:200px;
-	top: 750px;
-}
-#png55{
-	position: absolute;
-	right:100px;
-	top: 850px;
-}
-#png66{
-	position: absolute;
-	right:100px;
-	top: 50px;
-}
-#png77{
-	position: absolute;
-	right:20px;
-	top: 550px;
-}
-#png88{
-	position: absolute;
-	right:200px;
-	bottom: 110px;
-}
-*/
